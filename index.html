@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ivan Robles — Full Stack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Fondo partículas -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- Navbar -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="logo">IR<span class="dot">.</span></div>
+      <nav class="nav-links">
+        <a href="#home">Inicio</a>
+        <a href="#about">Sobre mí</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+      <a class="btn-outline" href="#contact">Contáctame</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <p class="eyebrow">Bienvenido a mi Portafolio</p>
+          <h1>
+            Hola, Soy <span class="accent">Ivan Robles</span><br />
+
+            <small class="muted">
+              <span id="typing"></span>
+            </small>
+          </h1>
+          <p class="lead">
+            Desarrollo soluciones modernas y escalables — frontend, backend y
+            despliegue. Me gusta crear experiencias limpias, accesibles y
+            rápidas.
+          </p>
+          <div class="hero-actions">
+            <a class="btn-primary" href="#projects">Ver proyectos</a>
+            <a class="btn-ghost" href="#about">Sobre mí</a>
+          </div>
+          <div class="tech-row" aria-hidden="true">
+            <span class="tech">Java</span>
+            <span class="tech">Angular</span>
+            <span class="tech">MySQL</span>
+            <span class="tech">Docker</span>
+            <span class="tech">AWS</span>
+          </div>
+        </div>
+
+        <!-- Astronauta flotando -->
+        <div class="hero-right">
+          <div class="astro-wrap" id="astro">
+            <img src="assets/astronauta.svg" alt="Astronauta flotando" class="astronaut" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section dark-block">
+      <div class="container two-col">
+        <div class="card">
+          <h2>Sobre mí</h2>
+          <p>
+            Soy <strong>Iván Robles</strong>, desarrollador web full stack.
+            Experiencia en Angular, Node.js, bases de datos relacionales y no
+            relacionales, y despliegue en AWS.
+          </p>
+          <a class="btn-primary" href="#projects">Ver proyectos</a>
+        </div>
+        <div>
+          <h3>Detalles</h3>
+          <ul class="info-list">
+             
+            <li><strong>Rol:</strong> Full Stack Developer</li>
+            <li><strong>Ubicación:</strong> México</li>
+            <li>
+              <strong>Email:</strong>
+              <a href="mailto:ivanrobles01http@gmail.com" style="color: #ff5b8a;">ivanrobles01http@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container skills-container">
+        <h2 class="skills-title">Habilidades</h2>
+
+        <div class="spaceship">🛸</div>
+
+        <div class="skills-panels" >
+          <!-- Sol (mitad visible a la izquierda) -->
+          <!-- Planetas / Logos en órbita -->
+          <div class="panel">
+            <h3>Backend</h3>
+            <div class="logos">
+              <img src="assets/logos/nodejs.svg" class="planet" alt="Node.js" title="Node.js" />
+              <img src="assets/logos/java.svg" class="planet" alt="Java" title="Java"/>
+              <img src="assets/logos/spring.svg" class="planet" alt="Spring"  title="Spring"/>
+              <img src="assets/logos/dart.svg" class="planet" alt="Dart"  title="Dart"/>
+              <img src="assets/logos/python.svg" class="planet" alt="Python" title="Python" />
+            </div>
+          </div>
+
+          <div class="panel">
+            <h3>Frontend</h3>
+            <div class="logos">
+
+              <img src="assets/logos/angular.svg" class="planet" alt="Angular" title="Angular"/>
+              <img src="assets/logos/flutter.svg" class="planet" alt="Flutter" title="Flutter" />
+              <img src="assets/logos/html.svg" class="planet" alt="HTML5" title="HTML5" />
+              <img src="assets/logos/css.svg" class="planet" alt="CSS3" title="CSS3" />
+              <img src="assets/logos/bootstrap.svg" class="planet" alt="Bootstrap" title="Bootstrap"/>
+            </div>
+          </div>
+
+          <div class="panel">
+            <h3>Bases de Datos</h3>
+            <div class="logos">
+              <img src="assets/logos/mysql.svg" class="planet" alt="MySQL" title="MySQL" />
+              <img src="assets/logos/microsoft-sql-server.svg" class="planet" alt="microsoft-sql-server" title="microsoft-sql-server"/>
+              <img src="assets/logos/mongodb.svg" class="planet" alt="MongoDB" title="MongoDB" />
+              <img src="assets/logos/firebase.svg" class="planet" alt="Firebase" title="Firebase"/>
+              <img src="assets/logos/neo4j.svg" class="planet" alt="Neo4j" title="Neo4j"/>
+            </div>
+          </div>
+
+          <div class="panel">
+            <h3>DevOps</h3>
+            <div class="logos">
+
+              <img src="assets/logos/aws.svg" class="planet" alt="AWS" title="AWS"/>
+              <img src="assets/logos/docker.svg" class="planet" alt="Docker" title="Docker"/>
+              <img src="assets/logos/git.svg" class="planet" alt="Git" title="Git"/>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+
+    <section id="projects" class="section dark-block">
+  <div class="nebulosa"></div>
+
+  <div class="container">
+    <h2 class="projects-title">🚀 Proyectos Destacados</h2>
+
+    <div class="projects-grid">
+      <article class="project" data-project="1">
+        <img src="assets/imagenes/ProyectosImperio/ingPrev.png" alt="Stock Master" />
+        <div class="project-content">
+          <h3>Stock Master</h3>
+          <p>Gestión de inventarios — Angular, Bootstrap, Firebase.</p>
+        </div>
+      </article>
+
+      <article class="project" data-project="2">
+        <img src="assets/imagenes/sanor/presanor.png" alt="SANOR" />
+        <div class="project-content">
+          <h3>SANOR</h3>
+          <p>Sistema Notarial — Node.js, Express, Angular, Bootstrap, MySQL, AWS.</p>
+        </div>
+      </article>
+
+      <article class="project" data-project="3">
+        <img src="assets/imagenes/sanor/desktop.png" alt="Administrador SANOR" />
+        <div class="project-content">
+          <h3>Administrador SANOR</h3>
+          <p>Administrador del Sistema Notarial — Java.</p>
+        </div>
+      </article>
+      
+      <article class="project" data-project="4">
+        <img src="assets/imagenes/Correspondencia/correspondencia.png" alt="Sistema de Correspondencia Institucional" />
+        <div class="project-content">
+          <h3>Sistema de Correspondencia Institucional</h3>
+          <p>Sistema de gestión de correspondencia — Thymeleaf, Java con Spring Boot y MySQL.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+
+
+</section>
+
+  <!-- Modal tipo terminal -->
+  <div class="modal" id="projectModal">
+    <div class="modal-content">
+      <div class="terminal">
+        <div class="terminal-header">
+          <div class="dot red"></div>
+          <div class="dot yellow"></div>
+          <div class="dot green"></div>
+        </div>
+        <div class="terminal-body" id="terminalBody">
+          <h3 id="modalTitle">Proyecto</h3>
+          <h5 id="modalPuesto" >Puesto</h5>
+          <p id="modalDescription"></p>
+          <div class="gallery">
+            <img id="modalImage" src="" alt="Vista del proyecto" />
+          </div>
+        </div>
+
+        <!-- Flechas de navegación -->
+        <button class="nav-btn left" id="prevInfo">&#x276E;</button>
+        <button class="nav-btn right" id="nextInfo">&#x276F;</button>
+      </div>
+
+      <button class="close-btn" id="closeModal">&times;</button>
+    </div>
+  </div>
+
+<section id="experience" class="section">
+  <div class="experience-container">
+    <div class="astronaut">
+      <img src="assets/astrowork.svg" alt="Astronauta flotante" />
+    </div>
+
+    <div class="timeline">
+      <h2 class="experience-title">Experiencia Laboral</h2>
+
+      <div class="timeline-items">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Desarrollador Full Stack</h3>
+            <span class="date">2024 - Actualidad</span>
+            <h5>Secretaria de Administración y Finanzas Del Estado de Nayarit</h5>
+            <p>
+              Desarrollo de aplicaciones web modernas con Angular, Node.js, Java, Spring y AWS.
+              Integración de bases de datos, optimización de rendimiento y seguridad.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Residente de Ingeniería / Desarrollador de Software</h3>
+            <span class="date">2024 - 2024</span>
+            <h5>Imperio Ingeniería (Proyectos de Obra Civil)</h5>
+            <p>
+              Desarrollo de un sistema de gestión Angular y Firebase para inventario, tiempos de proyectos y archivos (facturas/personal).
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+  <div class="contact-container">
+    <div class="contact-card">
+      <h3>🌌 Contáctame</h3>
+      <p>Sígueme en mis redes:</p>
+
+      <div class="contact-socials">
+        <!-- Reemplaza las rutas por tus propios SVG -->
+        <a href="https://github.com/IvanRobles19" class="contact-social" title="GitHub">
+          <img src="assets/logos/github1.svg" alt="GitHub" />
+        </a>
+        <a href="https://www.linkedin.com/in/ivan-guadalupe-robles-hernandez-444b1a2b9/" class="contact-social" title="LinkedIn">
+          <img src="assets/logos/linkedin.svg" alt="LinkedIn" />
+        </a>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <footer class="footer">
+      <div class="container">
+        <p>Iván Robles — Full Stack Developer</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
